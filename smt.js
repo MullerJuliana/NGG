@@ -31,14 +31,9 @@ function checkUserGuess() {
         pText.style.color = "#ed3472";
         pText.textContent = "The Number is too Low, Try again!";
     }   
-    
-    else if (userGuess > 25){
-        pText.style.color = "#ed3472";
-        pText.textContent = "Careful! Number is over 25.";
-    }
 }       
 
-//Event listener to be able to press Submit
+//Event listener to be able to press Submit and for the text change
 inputSubmit.addEventListener("click", checkUserGuess);
 
 pText.textContent = "Guess a number between 1 and 25 to see if its correct";
